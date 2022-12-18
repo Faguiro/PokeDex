@@ -6,3 +6,6 @@
 * Consumo de API 
 * Promises
 * Code refactoring
+
+### Deploy:
+https://snakeproject.pythonanywhere.com/pokedex
