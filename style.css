@@ -17,10 +17,11 @@ h1 {
 }
 
 .pokedex {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 20px;
-	padding-inline-start: 0;
+  display: flex;
+  grid-gap: 20px;
+  padding-inline-start: 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -30,6 +31,7 @@ h1 {
 	text-align: center;
 	border-radius: 20px;
 	position: relative;
+  min-width: 300px;
 }
 
 .card::after {
@@ -132,13 +134,23 @@ h1 {
 	z-index: 2;
 }
 
-input#poke-name {
+#poke-name {
   text-align: center;
   color: blueviolet;
   font-size: 20px;
   padding: 10px;
   border-radius: 30px;
   border: none;
+}
+
+input#poke-name::placeholder {
+  text-align: center;
+  color: blueviolet;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  font-style: italic;
+  opacity: 0.3;
 }
 .form-group { 
   display: flex;
