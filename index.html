@@ -7,10 +7,20 @@
   <title>PokeDex</title>
   <link rel="shortcut icon" href="./pikachu_ico.ico">
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>PokeDex</h1>
+      <div class="form-group">
+        <input type="text" class="form-control" id="poke-name" placeholder="Encontre seu pokemon">      
+        
+      </div>
+
+      <button class="button-all" role="button">Todos</button>
+    
+      <ul class="sugestoes" style="display:grid"></ul>
+  
     <ul data-js="pokedex" class="pokedex"></ul>
   </div>  
 
